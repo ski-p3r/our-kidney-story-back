@@ -27,7 +27,7 @@ services:
     depends_on:
       - db
     environment:
-      - DJANGO_SETTINGS_MODULE=backend.settings
+      - DJANGO_SETTINGS_MODULE=config.settings
 
   minio:
     image: minio/minio
