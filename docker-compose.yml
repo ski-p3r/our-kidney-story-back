@@ -21,7 +21,7 @@ services:
     command: >
       sh -c "python manage.py migrate &&
              echo 'from django.contrib.auth import get_user_model; User = get_user_model(); User.objects.filter(username=\"admin\").exists() or User.objects.create_superuser(\"admin\", \"admin@oks.com\", \"admin@123\")' | python manage.py shell &&
-             gunicorn backend.wsgi:application --bind 0.0.0.0:8000"
+             gunicorn config.wsgi:application --bind 0.0.0.0:8000"
     ports:
       - "8000:8000"
     depends_on:
