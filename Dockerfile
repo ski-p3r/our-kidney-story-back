@@ -9,4 +9,4 @@ COPY . .
 
 RUN apt-get update && apt-get install -y libpq-dev gcc
 
-CMD ["gunicorn", "backend.wsgi:application", "--bind", "0.0.0.0:8000"]
+CMD ["gunicorn", "config.wsgi:application", "--bind", "0.0.0.0:8000"]
