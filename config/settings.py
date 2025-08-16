@@ -84,7 +84,7 @@ DATABASES = {
         'NAME': os.getenv('DB_NAME', 'kidney_story'),
         'USER': os.getenv('DB_USER', 'postgres'),
         'PASSWORD': os.getenv('DB_PASSWORD', 'postgres'),
-        'HOST': os.getenv('DB_HOST', '34.239.185.74 '),
+        'HOST': os.getenv('DB_HOST', '54.158.255.243 '),
         'PORT': os.getenv('DB_PORT', '5432'),
     }
 }
@@ -176,7 +176,7 @@ SIMPLE_JWT = {
 CORS_ALLOW_ALL_ORIGINS = True
 
 # MinIO settings
-MINIO_ENDPOINT = os.getenv('MINIO_ENDPOINT', '34.239.185.74 :9000')
+MINIO_ENDPOINT = os.getenv('MINIO_ENDPOINT', '54.158.255.243:9000')
 MINIO_ACCESS_KEY = os.getenv('MINIO_ACCESS_KEY', 'minioadmin')
 MINIO_SECRET_KEY = os.getenv('MINIO_SECRET_KEY', 'minioadmin')
 MINIO_BUCKET_NAME = os.getenv('MINIO_BUCKET_NAME', 'kidney-story')
